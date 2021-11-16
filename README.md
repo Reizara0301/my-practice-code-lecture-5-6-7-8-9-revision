@@ -1463,3 +1463,235 @@ int main()
 
 	}
 }
+
+	#Lecture 10
+
+#Countdown for loop
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int x = 10; x >=0; x--)
+	{
+		if (x != 0)
+			cout << "X is " << x << "\n";
+		else
+			cout << "We have lift off" << endl;
+	}
+
+}
+
+
+
+
+*****************************************************************************
+SECOND METHOD
+
+*****************************************************************************
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int x = 10; x !=0; x--)
+	{
+		
+			cout << "X is " << x << "\n";
+		
+			
+	}
+	cout << "We have lift off" << endl;
+}
+
+#Odd and Even for loop
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int x = 20; x <= 24; x++)
+	{
+		if (x %2==0)
+			cout << x << " - even" << "\n";
+		else
+			cout << x << " - odd" << "\n";
+	}
+
+}
+
+#For loop seven star row and column 
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int i = 0; i < 7; i++)
+	{ //execute the outer loop 5 times 
+		for (int j = 0; j < 7; j++)
+		{//execute the inner loop 5 x 5 times
+			cout << "*"; //print 5 stars
+		}
+		cout << endl; //print to a new console line 
+	}
+
+
+}
+
+#some counting 
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+cout << " **********A program that counts up from 0 to 50 in increments of 1**********\n";
+for (int x=0; x<51; x++)
+{
+	cout << x << endl;
+}
+cout << endl;
+cout << " **********A program that counts down from 50 to 0 in decrements of 1**********\n";
+for (int x = 50; x >= 0; x--)
+{
+	cout << x << endl;
+}
+cout << endl;
+cout << " **********A program that counts up from 30 to 50 in increments of 1**********\n";
+for (int x = 30; x < 51; x++)
+{
+	cout << x << endl;
+}
+
+cout << " **********A program that counts down from 50 to 10 in decrements of 2**********\n";
+for (int x = 50; x > 11; x=x-2)
+{
+	cout << x << endl;
+}
+
+cout << " **********A program that counts up from 100 to 200 in increments of 5**********\n";
+for (int x = 100; x < 201; x = x + 5)
+{
+	cout << x << endl;
+}
+}
+
+#iterate through a word
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int x = 0; x < 4; x++)
+	{
+		string myWord = "ARSH";
+		cout << myWord.at(x) << endl;
+	}
+
+}
+
+#Lecture 10 exercises
+
+#Decending star 7
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int i = 1; i <= 5; i++)
+	{ //execute the outer loop 5 times 
+		for (int j = 1; j <=i; j++)
+		{//execute the inner loop 5 x 5 times
+			cout << "*"; //print 5 stars
+		}
+		cout << endl; //print to a new console line 
+	}
+
+
+}
+
+#Cube
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int r;
+	cout << "Enter a number to find the cube" << endl;
+	cin >> r;
+	for (int x = 1; x <= r; x++)
+	{
+		cout << "\nNumber is " << x << " the cube is ";
+		int y = x;
+		y=y* y* y;
+		cout << y;
+	}
+
+}
+
+#9s
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int sum = 0;
+	
+	for (int x = 100; x <= 200; x++)
+	{
+		if (x % 9 == 0)
+		{
+			cout << "\nNumber is " << x << endl;
+					
+			sum = sum + x;
+		
+					}
+		
+		
+	}
+	cout << "The sum is " << sum << endl;
+}
+
+#rising start 5
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int i = 1; i <= 5; i++)
+	{ //execute the outer loop 5 times 
+		for (int j = 1; j <=i; j++)
+		{//execute the inner loop 5 x 5 times
+			cout << "*"; //print 5 stars
+		}
+		cout << endl; //print to a new console line 
+	}
+
+
+}
+
+#rise and fall
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int i = 1; i <= 5; i++)
+	{ //execute the outer loop 5 times 
+		for (int j = 1; j <= i; j++)
+		{//execute the inner loop 5 x 5 times
+			cout << "*"; //print 5 stars
+		}
+		cout << endl; //print to a new console line 
+	}
+
+
+	for (int i = 1; i <= 5; i++) {
+		for (int j = i; j <= 5; j++) { //execute the inner loop 5 times
+			cout << "*"; //print reducing lines of stars
+		}
+		cout << endl; //print to a new console line 
+	}
+
+
+}
